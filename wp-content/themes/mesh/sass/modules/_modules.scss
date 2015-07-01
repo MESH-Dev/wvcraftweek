@@ -1,0 +1,74 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+.callout {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+a{cursor:pointer;
+	img{opacity:1; transition:all .2s ease-in-out;
+		&:hover, &:focus, &:active{opacity:.5;}	
+	}
+}
+
+header{position:absolute; width:100%;
+	a{color:white;
+		&:hover, &:focus, &:active{
+			text-decoration:underline;
+		}
+	}
+
+	.container{width:100%;
+	}
+}
+	
+
+header .container .twelve.columns, footer .container .twelve.columns{width:100%;}
+
+.main-bg{width:100%; position:absolute; z-index:-1; height:85%;
+	img{width:100%; height:auto;}
+	.panel-1{height:100%;background:url('http://localhost:8888/wv-craft-week/wp-content/themes/mesh/img/craftweek_bg_1.jpg'); background-position:center;background-repeat:no-repeat; background-size:cover;}
+}
+	
+.user-gateway{z-index:25; float:right; position:absolute; top:0; right:0;
+	.gateway{display:inline-block; padding:.5em 1em; /*text-align:center;*/ margin-right:.5em; text-transform: uppercase; color:white; font-size:12px; width:auto; vertical-align:top; font-family: 'montserratregular';}
+	.participants{background: #c23287;}
+	.studios{background: #f4a933;}
+	}
+
+.logo{width:25%;
+	img{max-width:100%; height:auto;}
+}
+
+.content-fullscreen{height:85%}
+
+footer{position:absolute; width:100%; background:white; /*height:15%;*/ /*padding:1em 0;*/ bottom:0;
+	.container{width:100%;}
+	.row{margin:0 !important;}
+	img {max-width:100%; height:auto;}
+	li{padding-top:.5em;}
+}
+
+.main-sponsors{float:right;}
+
+	.full-bg{background-size:cover; background-repeat:no-repeat; background-position:center center; width:100%; height:100%;}
+
+.slides-navigation{position:absolute; top:50%; right:1em; z-index:5000; width:3%;
+	img{width:100%; height:auto;}
+}
+	
+.callout-container{width:80%; /*top:50%;*/ /*left:50%;*/ position:relative; margin:0 auto; display: table; height:100%;}
+	
+.circle{position:absolute; width:500px; height:500px; border-radius:50%; background:rgba(248, 192, 113, .4); z-index: -1; top:50%; left:50%; margin-left:-250px; margin-top:-250px;}
+	
+.callout-text{font-family:"montserratultra_light"; color:white; text-align:center; display: table-cell; vertical-align:middle; width:60%; position:relative; right:20%;
+	
+.callout-text h2{font-size: 3.25em; text-transform: uppercase; margin:0 !important; font-weight:100; line-height: 1; }
+	 h4{font-size:2.25em; margin:0 !important; text-transform:none;}
+	a{color:white;
+	 &:hover, &:active, &:focus{text-decoration:underline;}
+	}
+}
