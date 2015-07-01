@@ -5,7 +5,7 @@ get_header(); ?>
 
 <main id="main" class="site-main homepage-fullscreen" role="main">
   <div class="main-bg" >
-    <div class="panel-1" id="slides">
+    <div class="panel" id="slides">
       <!-- <div id="slides-control"> -->
         <div class="slides-container">
         <?php 
@@ -14,7 +14,7 @@ get_header(); ?>
           $header = get_field('callout_header');
           $callout = get_field('callout_text');
           $cta = get_field('cta_text');
-          $ctaLink = get_field('cta_link');
+          $ctalink = get_field('cta_link');
           $ctr = 1;
         ?>
           <?php while ( have_rows ('background_images')) : the_row();
@@ -27,7 +27,7 @@ get_header(); ?>
                     <div class="callout-text">
                       <h2><?php echo $header; ?></h2>
                       <h4><?php echo $callout; ?></h4>
-                      <p><a href="<?php $ctalink; ?>" title="Check out our Facebook page for event updates!"><?php echo $cta; ?></a></p>
+                      <p><a href="<?php echo $ctalink; ?>" title="Check out our Facebook page for event updates!"><?php echo $cta; ?></a></p>
                     </div>
                 </div>
 

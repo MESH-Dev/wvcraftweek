@@ -542,64 +542,73 @@ footer p {
 }
 
 /* line 11, sass/modules/_modules.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 13, sass/modules/_modules.scss */
+.container .columns {
+  margin: 0 !important;
+}
+
+/* line 15, sass/modules/_modules.scss */
 a {
   cursor: pointer;
 }
-/* line 12, sass/modules/_modules.scss */
+/* line 16, sass/modules/_modules.scss */
 a img {
   opacity: 1;
   transition: all .2s ease-in-out;
 }
-/* line 13, sass/modules/_modules.scss */
+/* line 17, sass/modules/_modules.scss */
 a img:hover, a img:focus, a img:active {
   opacity: .5;
 }
 
-/* line 17, sass/modules/_modules.scss */
+/* line 21, sass/modules/_modules.scss */
 header {
   position: absolute;
   width: 100%;
 }
-/* line 18, sass/modules/_modules.scss */
+/* line 22, sass/modules/_modules.scss */
 header a {
   color: white;
 }
-/* line 19, sass/modules/_modules.scss */
+/* line 23, sass/modules/_modules.scss */
 header a:hover, header a:focus, header a:active {
   text-decoration: underline;
 }
-/* line 24, sass/modules/_modules.scss */
+/* line 28, sass/modules/_modules.scss */
 header .container {
   width: 100%;
 }
 
-/* line 29, sass/modules/_modules.scss */
+/* line 33, sass/modules/_modules.scss */
 header .container .twelve.columns, footer .container .twelve.columns {
   width: 100%;
 }
 
-/* line 31, sass/modules/_modules.scss */
+/* line 35, sass/modules/_modules.scss */
 .main-bg {
   width: 100%;
   position: absolute;
   z-index: -1;
   height: 85%;
 }
-/* line 32, sass/modules/_modules.scss */
+/* line 36, sass/modules/_modules.scss */
 .main-bg img {
   width: 100%;
   height: auto;
 }
-/* line 33, sass/modules/_modules.scss */
-.main-bg .panel-1 {
+/* line 37, sass/modules/_modules.scss */
+.main-bg .panel {
   height: 100%;
-  background: url("http://localhost:8888/wv-craft-week/wp-content/themes/mesh/img/craftweek_bg_1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 36, sass/modules/_modules.scss */
+/* line 40, sass/modules/_modules.scss */
 .user-gateway {
   z-index: 25;
   float: right;
@@ -607,11 +616,10 @@ header .container .twelve.columns, footer .container .twelve.columns {
   top: 0;
   right: 0;
 }
-/* line 37, sass/modules/_modules.scss */
+/* line 41, sass/modules/_modules.scss */
 .user-gateway .gateway {
   display: inline-block;
   padding: .5em 1em;
-  /*text-align:center;*/
   margin-right: .5em;
   text-transform: uppercase;
   color: white;
@@ -620,63 +628,58 @@ header .container .twelve.columns, footer .container .twelve.columns {
   vertical-align: top;
   font-family: 'montserratregular';
 }
-/* line 38, sass/modules/_modules.scss */
+/* line 42, sass/modules/_modules.scss */
 .user-gateway .participants {
   background: #c23287;
 }
-/* line 39, sass/modules/_modules.scss */
+/* line 43, sass/modules/_modules.scss */
 .user-gateway .studios {
   background: #f4a933;
 }
 
-/* line 42, sass/modules/_modules.scss */
+/* line 46, sass/modules/_modules.scss */
 .logo {
   width: 25%;
 }
-/* line 43, sass/modules/_modules.scss */
+/* line 47, sass/modules/_modules.scss */
 .logo img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 46, sass/modules/_modules.scss */
+/* line 50, sass/modules/_modules.scss */
 .content-fullscreen {
   height: 85%;
 }
 
-/* line 48, sass/modules/_modules.scss */
+/* line 52, sass/modules/_modules.scss */
 footer {
   position: absolute;
   width: 100%;
   background: white;
-  /*height:15%;*/
-  /*padding:1em 0;*/
   bottom: 0;
+  padding-right: 2em;
 }
-/* line 49, sass/modules/_modules.scss */
+/* line 53, sass/modules/_modules.scss */
 footer .container {
   width: 100%;
 }
-/* line 50, sass/modules/_modules.scss */
+/* line 54, sass/modules/_modules.scss */
 footer .row {
   margin: 0 !important;
 }
-/* line 51, sass/modules/_modules.scss */
+/* line 55, sass/modules/_modules.scss */
 footer img {
   max-width: 100%;
   height: auto;
 }
-/* line 52, sass/modules/_modules.scss */
-footer li {
-  padding-top: .5em;
-}
 
-/* line 55, sass/modules/_modules.scss */
+/* line 59, sass/modules/_modules.scss */
 .main-sponsors {
   float: right;
 }
 
-/* line 57, sass/modules/_modules.scss */
+/* line 61, sass/modules/_modules.scss */
 .full-bg {
   background-size: cover;
   background-repeat: no-repeat;
@@ -685,7 +688,7 @@ footer li {
   height: 100%;
 }
 
-/* line 59, sass/modules/_modules.scss */
+/* line 63, sass/modules/_modules.scss */
 .slides-navigation {
   position: absolute;
   top: 50%;
@@ -693,13 +696,13 @@ footer li {
   z-index: 5000;
   width: 3%;
 }
-/* line 60, sass/modules/_modules.scss */
+/* line 64, sass/modules/_modules.scss */
 .slides-navigation img {
   width: 100%;
   height: auto;
 }
 
-/* line 63, sass/modules/_modules.scss */
+/* line 67, sass/modules/_modules.scss */
 .callout-container {
   width: 80%;
   /*top:50%;*/
@@ -710,7 +713,7 @@ footer li {
   height: 100%;
 }
 
-/* line 65, sass/modules/_modules.scss */
+/* line 69, sass/modules/_modules.scss */
 .circle {
   position: absolute;
   width: 500px;
@@ -724,7 +727,7 @@ footer li {
   margin-top: -250px;
 }
 
-/* line 67, sass/modules/_modules.scss */
+/* line 71, sass/modules/_modules.scss */
 .callout-text {
   font-family: "montserratultra_light";
   color: white;
@@ -735,29 +738,48 @@ footer li {
   position: relative;
   right: 20%;
 }
-/* line 69, sass/modules/_modules.scss */
-.callout-text .callout-text h2 {
+/* line 73, sass/modules/_modules.scss */
+.callout-text h2 {
   font-size: 3.25em;
   text-transform: uppercase;
   margin: 0 !important;
   font-weight: 100;
   line-height: 1;
 }
-/* line 70, sass/modules/_modules.scss */
+/* line 74, sass/modules/_modules.scss */
 .callout-text h4 {
   font-size: 2.25em;
   margin: 0 !important;
   text-transform: none;
 }
-/* line 71, sass/modules/_modules.scss */
+/* line 75, sass/modules/_modules.scss */
 .callout-text a {
   color: white;
 }
-/* line 72, sass/modules/_modules.scss */
+/* line 76, sass/modules/_modules.scss */
 .callout-text a:hover, .callout-text a:active, .callout-text a:focus {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 960px) {
+  /* line 81, sass/modules/_modules.scss */
+  .callout-text h2 {
+    font-size: 2.25em;
+  }
+
+  /* line 82, sass/modules/_modules.scss */
+  .callout-text h4 {
+    font-size: 1.25em;
+  }
+
+  /* line 83, sass/modules/_modules.scss */
+  .circle {
+    width: 350px;
+    height: 350px;
+    margin-left: -175px;
+    margin-top: -175px;
+  }
+}
 /* BASE GRID
  * ------------------------------------------------ */
 /* line 3, sass/grid/_grid.scss */
