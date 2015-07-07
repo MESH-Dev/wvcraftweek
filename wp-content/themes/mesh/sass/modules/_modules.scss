@@ -18,7 +18,7 @@ a{cursor:pointer;
 	}
 }
 
-header{position:absolute; width:100%;
+header{position:absolute; width:100%; z-index:25;
 	a{color:white;
 		&:hover, &:focus, &:active{
 			text-decoration:underline;
@@ -32,7 +32,8 @@ header{position:absolute; width:100%;
 
 header .container .twelve.columns, footer .container .twelve.columns{width:100%;}
 
-.main-bg{width:100%; position:absolute; z-index:-1; height:85%;
+
+.main-bg{width:100%; position:absolute; z-index:-1; height:100%; 
 	img{width:100%; height:auto;}
 	.panel{height:100%; background-position:center;background-repeat:no-repeat; background-size:cover;}
 }
@@ -43,24 +44,24 @@ header .container .twelve.columns, footer .container .twelve.columns{width:100%;
 	.studios{background: #f4a933;}
 	}
 
-.logo{width:25%;
+.logo{width:25%; min-width:185px;
 	img{max-width:100%; height:auto;}
 }
 
 .content-fullscreen{height:85%}
 
-footer{position:absolute; width:100%; background:white; bottom:0; padding-right:2em;
+footer{position:absolute; width:100%; min-width:1075px; background:white; bottom:0; padding-top:.5em; padding-right:2em; min-height:80px;
 	.container{width:100%;}
 	.row{margin:0 !important;}
-	img {max-width:100%; height:auto;}
+	img {max-width:80%; height:auto;}
 	// li{padding-top:.5em;}
 }
 
 .main-sponsors{float:right;}
 
-	.full-bg{background-size:cover; background-repeat:no-repeat; background-position:center center; width:100%; height:100%;}
+.full-bg{background-size:cover; background-repeat:no-repeat; background-position:center center; width:100%; height:100%;}
 
-.slides-navigation{position:absolute; top:50%; right:1em; z-index:5000; width:3%;
+.slides-navigation{position:absolute; top:50%; right:1em; z-index:5000; width:3%; min-width:20px;
 	img{width:100%; height:auto;}
 }
 	
@@ -77,8 +78,25 @@ footer{position:absolute; width:100%; background:white; bottom:0; padding-right:
 	}
 }
 
+@media only screen and (max-width : 1075px){
+	.main-sponsors {float:none}
+}
+
 @media only screen and (max-width : 960px){
 	.callout-text h2 {font-size:2.25em;}
 	.callout-text h4 {font-size:1.25em;}
 	.circle{width:350px; height:350px; margin-left:-175px; margin-top:-175px;}
+}
+
+@media only screen and (max-width : 768px){
+	.main-navigation ul {display:inline; width:100%;}
+	footer .sponsors img{max-width:60%}
+}
+
+@media only screen and (max-width : 400px){
+	footer {padding-right:0em; text-align:center; min-width:100%;}
+	.callout-text {width:100%; right:0;}
+	.main-navigation li {float:none; display:inline-block;}
+	.user-gateway{text-align:right;}
+	.user-gateway .gateway{display:block; margin-right:0;}
 }
