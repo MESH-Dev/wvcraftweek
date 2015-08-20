@@ -18,16 +18,17 @@ get_header(); ?>
           $ctr = 1;
         ?>
           <?php while ( have_rows ('background_images')) : the_row();
-              $images = get_sub_field('background_image'); ?>
+              $images = get_sub_field('background_image'); 
+              $bgImageUrl = $images['sizes']['background-fullscreen'];?>
            
-           <div class="full-bg" style="background-image:url('<?php echo $images['url']; ?>');">
+           <div class="full-bg" style="background-image:url('<?php echo $bgImageUrl; ?>');">
               <? if($ctr ==1){ ?>
                 <div class="callout-container">
                   <div class="circle"></div>
                     <div class="callout-text">
                       <h2><?php echo $header; ?></h2>
                       <h4><?php echo $callout; ?></h4>
-                      <p><a href="<?php echo $ctalink; ?>" title="Check out our Facebook page for event updates!"><?php echo $cta; ?></a></p>
+                      <p><a href="<?php echo $ctalink; ?>" title="Check out our Facebook page for event updates!" target="_blank"><?php echo $cta; ?></a></p>
                     </div>
                 </div>
 

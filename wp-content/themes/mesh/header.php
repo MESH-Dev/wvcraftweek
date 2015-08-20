@@ -80,12 +80,12 @@
 						<!-- <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
 					</div>
 					<div class="user-gateway">
-						<div class="gateway participants"><a href="http://americancraftweek.com/participants" title="See who's participating this year, visit http://americancraftweek.com/participants" target="_blank">See this years<br> participants</a></div>
-						<div class="gateway studios"><a href="http://www.tamarackfoundation.org/hgm/findartisan.php" title="Create your own trail, visit http://www.tamarackfoundation.org/hgm/findartisan.php" target="_blank">Create your own custom<br> trail to artists studios</a></div>
+						<div class="gateway participants"><a href="http://americancraftweek.com/participants" title="See who's participating this year, visit http://americancraftweek.com/participants" target="_blank">Find Participating<br> Artists</a></div>
+						<div class="gateway studios"><a href="http://www.tamarackfoundation.org/open-studio-week-2.php" title="Sign up to be a participating artist. Visit http://www.tamarackfoundation.org/hgm/findartisan.php" target="_blank">Sign Up to be a<br> Participating Artist</a></div>
 						<div class="gateway social">
 							<a href="https://twitter.com/TamarackFound" alt="Click here to visit the Tamarack Foundation's Twitter feed" title="Follow the Tamarack Foundation on Twitter:  https://twitter.com/TamarackFound - link opens in new window" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/twitter_header.png"></a>
 							<a href="https://instagram.com/tamarackfoundation" alt="Click here to visit the Tamarack Foundation's Instagram feed" title="Get social with the Tamarack Foundation by visiting their Instagram feed:  https://instagram.com/tamarackfoundation - link opens in a new window" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/instagram_header.png"></a>
-							<a href="https://www.facebook.com/TamarackFoundation" alt="Click here to visit the Tamarack Foundation's Facebook page" title="Connect with the Tamarack Foundation on Facebook: https://www.facebook.com/TamarackFoundation - link opens in new window" target="blank" ><img src="<?php echo get_template_directory_uri() ?>/img/fb_header.png"></a>
+							<a href="https://www.facebook.com/pages/West-Virginia-Craft-Week/850660421682136?fref=ts" alt="Click here to visit the CraftWeek Facebook page" title="Connect with the Tamarack Foundation on Facebook: https://www.facebook.com/TamarackFoundation - link opens in new window" target="blank" ><img src="<?php echo get_template_directory_uri() ?>/img/fb_header.png"></a>
 							<a href="https://www.youtube.com/channel/UCPhlI2hj0AfqevTBmomMFag" alt="Click here to visit the Tamarack Foundation's YouTube channel" title="Watch the Tamarack Foundation's YouTube channel: https://www.youtube.com/channel/UCPhlI2hj0AfqevTBmomMFag - link opens in a new window" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/youtube_header.png"></a>
 						</div>
 					</div>

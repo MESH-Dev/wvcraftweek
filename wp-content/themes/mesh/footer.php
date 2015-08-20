@@ -53,6 +53,7 @@
 <script>
     jQuery('#slides').superslides({
       animation: 'slide',
+      play: 8000,
       inherit_height_from: '.main-bg'
     });
  </script>
